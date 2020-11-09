@@ -1,7 +1,9 @@
 <div class="slider" #slider>
   <div
     class="slider__button"
+    #button
     (mousedown)="mouseDown$.next($event)"
+    (mouseup)="mouseUp$.next($event)"
     [ngStyle]="buttonStyle$ | async"
   ></div>
 </div>
